@@ -16,8 +16,21 @@
             <br>
             <input type="password" class="form-control" placeholder="Password">
             <br>
-            <button class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
+    <div id="transiction-aria">
+        <h1>Tarin bokri</h1>
+    </div>
+    <script>
+        const loginBtn = document.getElementById('login');
+        loginBtn.addEventListener('click', function(){
+            const loginArea = document.getElementById('login-area');
+            loginArea.style.display = 'none';
+                const transactionAria = document.getElementById('transiction-aria');
+                transactionAria.style.display = 'block';
+        })
+        
+    </script>
 </body>
 </html>
